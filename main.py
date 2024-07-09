@@ -15,7 +15,11 @@ def makeReverse(numbers):
     Code Your Program here
     ########################################
     """
-
+    for i in range(len(numbers) // 2):
+        storage = numbers[i]
+        numbers[i] = numbers[-i-1]
+        numbers[-i] = storage
+    return numbers
 
 def main():
     numbers = getInput()

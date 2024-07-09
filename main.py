@@ -5,6 +5,8 @@ def getInput():
     Code Your Program here
     ########################################
     """
+    userinput = input()
+    return list(map(int, userinput.split()))
 
 
 def makeReverse(numbers):

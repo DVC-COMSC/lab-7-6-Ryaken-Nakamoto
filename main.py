@@ -18,7 +18,7 @@ def makeReverse(numbers):
     for i in range(len(numbers) // 2):
         storage = numbers[i]
         numbers[i] = numbers[-i-1]
-        numbers[-i] = storage
+        numbers[-i-1] = storage
     return numbers
 
 def main():
